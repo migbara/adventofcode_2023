@@ -37,7 +37,7 @@ function part1() {
                 // console.log(number, color, maxNumberByColor.get(color));
     
                 if(number > maxNumberByColor.get(color)){
-                    console.log(`${id} is not possible because ${number} in ${color} > ${maxNumberByColor.get(color)}`);
+                    // console.log(`${id} is not possible because ${number} in ${color} > ${maxNumberByColor.get(color)}`);
                     posible = false;
                 }
 
@@ -47,7 +47,7 @@ function part1() {
             set++;
         }
         if(posible){
-            console.log(`${id} is possible`);
+            // console.log(`${id} is possible`);
             sum += id;
         }
     }
@@ -101,7 +101,7 @@ function part2() {
         // console.log([...maxNumberByColor]);
         const power = maxNumberByColor.get('red') * maxNumberByColor.get('green') * maxNumberByColor.get('blue');
 
-        console.log('power', power);
+        // console.log('power', power);
         sum += power;
     }
     console.log(`The solution for Day ${day} - Part 2 is: ${sum}`);
@@ -112,7 +112,7 @@ function main(){
 
     console.log(`DAY ${day}`);
 
-    // part1();
+    part1();
 
     part2();
 };
